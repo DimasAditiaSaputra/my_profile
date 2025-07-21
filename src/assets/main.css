@@ -1,0 +1,22 @@
+:root {
+  --bg-color: #f9f5ea;
+  --secondary-color: #f5e6cf;
+  --font-color: #040000;
+  --primary-button-color: #e86053;
+  --secondary-button-color: #0b8652;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Poppins', sans-serif;
+}

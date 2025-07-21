@@ -1,0 +1,164 @@
+/* sidebar.css */
+
+.sidebar {
+  width: 250px;
+  height: 100dvh;
+  background-color: var(--secondary-color);
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+}
+
+.side-null {
+  width: 300px;
+  height: 100dvh;
+}
+
+.profile-image {
+  width: 45%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.profile-image h1 {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+}
+
+.navigation li {
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 0px -1px rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.navigation a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.2s ease;
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px 20px;
+  background-color: var(--primary-button-color);
+  font-family: 'Josefin Sans', sans-serif;
+  box-shadow: 5px 5px 0px -1px rgba(0, 0, 0, 1);
+  position: relative;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+/* Efek saat hover */
+.navigation a:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  background-color: var(--primary-button-color);
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px -1px rgba(0, 0, 0, 1);
+}
+
+.media-sosial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.media-sosial .fa {
+  max-width: 50px;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border: 3px solid black;
+}
+
+.media-sosial .fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.sidebar,
+.side-null,
+.profile-image,
+.profile-image img,
+.navigation,
+.navigation ul,
+.navigation li,
+.navigation a,
+.media-sosial,
+.media-sosial .fa {
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 900px) {
+  .sidebar,
+  .side-null {
+    width: 0%;
+  }
+
+  .overlay {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4); /* hitam dengan transparansi 40% */
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+  }
+}
