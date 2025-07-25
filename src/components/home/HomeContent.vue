@@ -22,7 +22,7 @@
           A Computer Science student passionate about delving deep into the field and solving
           problems through technology.
         </p>
-        <button class="cta-button">Explore My Profile</button>
+        <router-link to="/about" class="cta-button">Explore My Profile</router-link>
       </div>
     </div>
   </div>

@@ -24,6 +24,7 @@
             <h4>Key Skills</h4>
             <ul class="skills-list">
               <li>JavaScript (Vue, Node.js)</li>
+              <li>Nuxt JS</li>
               <li>Express JS</li>
               <li>TypeScript</li>
               <li>Java</li>
